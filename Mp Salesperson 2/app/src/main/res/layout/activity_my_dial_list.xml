@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_top_brand"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.user.mp_salesperson.TopBrandActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_default"
+        />
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/toolbar"
+        android:background="#EBEEF5"
+        android:iconifiedByDefault="false"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:queryHint="Search">
+
+    </SearchView>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/top_brand_list"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search" />
+</RelativeLayout>

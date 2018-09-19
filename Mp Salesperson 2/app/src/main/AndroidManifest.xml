@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.user.mp_salesperson">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".Splash_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity_Nav"
+            android:label="@string/title_activity_login__nav"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name=".RequestBrandActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name=".ActivationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAYOtPvtwAVcYcy6bmUBgpu2MUvwMeeCQI" />
+
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CartActivity"
+            android:label="@string/title_activity_cart"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyOrders"
+            android:label="@string/title_activity_my_order"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyOrderDetails"
+            android:label="@string/title_activity_my_order_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PreHomeActivity"
+            android:label="@string/title_activity_my_order_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyProfile"
+            android:label="@string/title_activity_my_order_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name=".MyWallet"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name=".SkCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name=".CheckOutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name=".MyBeatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BeatOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DaysBidActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name=".MySalesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ReedemPointActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RewardItemActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ActionTaskActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name=".MyNews"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name=".MapsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name=".RequestServiceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name=".ActionTaskMultiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name=".TopBrandActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name=".MyDialListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity android:name=".PopularItemOrder" />
+        <activity
+            android:name=".dial.DialWheelActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name=".dial.DeliveryDialWheel"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name=".dial.DialWheelCustomerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name=".EditCustomerDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name=".BarcodeScanItem"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="fullSensor"
+            tools:replace="screenOrientation" />
+        <activity
+            android:name=".ReportActivity"
+            android:label="@string/title_activity_report"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+            android:name=".SubsubBrands"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity android:name="SubcatimageAllbrands"
+></activity>
+        <activity android:name=".TradeofferActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar"/>
+        <activity android:name=".subcatimageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar"/>
+    </application>
+
+</manifest>

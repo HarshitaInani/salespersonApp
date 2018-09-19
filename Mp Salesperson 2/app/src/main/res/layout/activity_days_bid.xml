@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_days_bid"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.mp_salesperson.DaysBidActivity">
+
+
+    <LinearLayout
+
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/lldays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/monday"
+
+            android:background="#000000"
+            android:textColor="#fff"
+
+            android:gravity="center"
+            android:text="M"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:background="#fff"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tuesday"
+
+            android:background="#000000"
+            android:textColor="#fff"
+
+            android:gravity="center"
+
+            android:text="T"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:background="#fff"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:id="@+id/wednesday"
+
+            android:background="#000000"
+            android:textColor="#fff"
+
+            android:gravity="center"
+
+            android:text="W"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:background="#fff"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/thrusday"
+
+            android:background="#000000"
+            android:textColor="#fff"
+
+            android:gravity="center"
+
+            android:text="T"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:background="#fff"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:id="@+id/friday"
+
+            android:background="#000000"
+            android:textColor="#fff"
+
+            android:gravity="center"
+
+            android:text="F"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:background="#fff"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:id="@+id/saturday"
+
+            android:background="#000000"
+            android:textColor="#fff"
+
+            android:gravity="center"
+
+            android:text="S"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+
+        <ImageView
+            android:background="#fff"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:id="@+id/sunday"
+
+            android:background="#000000"
+            android:textColor="#fff"
+            android:gravity="center"
+
+            android:text="S"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+    <EditText
+
+        android:layout_below="@+id/lldays"
+
+
+
+        android:singleLine="true"
+
+        android:maxLines="1"
+
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="16sp"
+        android:hint="Search"
+         />
+
+
+    <android.support.v7.widget.RecyclerView
+
+        android:layout_below="@+id/search"
+        android:layout_above="@+id/allcustomer"
+        android:id="@+id/card_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:scrollbars="vertical" />
+
+
+    <TextView
+
+
+
+        android:background="#000000"
+        android:textColor="#fff"
+        android:id="@+id/allcustomer"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:text="All Customer"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_my_beat"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

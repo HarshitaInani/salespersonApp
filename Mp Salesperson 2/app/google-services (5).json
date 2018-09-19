@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "271216046299",
+    "firebase_url": "https://market-place-salesperson-2.firebaseio.com",
+    "project_id": "market-place-salesperson-2",
+    "storage_bucket": "market-place-salesperson-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271216046299:android:dac53bd09cf78f97",
+        "android_client_info": {
+          "package_name": "com.example.user.mp_salesperson"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271216046299-tktjqpjdhrefoskquo73d9pvsckv07uj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByMeSBWQIfiVXa1bwU6xCvBksgW5EUJjs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
