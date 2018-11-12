@@ -1,0 +1,381 @@
+03-09 10:46:12.076 2906-2906/com.example.user.shopkrinaseller E/AndroidRuntime: FATAL EXCEPTION: main
+                                                                                Process: com.example.user.shopkrinaseller, PID: 2906
+                                                                                java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+                                                                                    at java.util.ArrayList.get(ArrayList.java:411)
+                                                                                    at com.example.user.shopkrinaseller.adapters.ItemListAdapter.onBindViewHolder(ItemListAdapter.java:60)
+                                                                                    at com.example.user.shopkrinaseller.adapters.ItemListAdapter.onBindViewHolder(ItemListAdapter.java:30)
+                                                                                    at android.support.v7.widget.RecyclerView$Adapter.onBindViewHolder(RecyclerView.java:6067)
+                                                                                    at android.support.v7.widget.RecyclerView$Adapter.bindViewHolder(RecyclerView.java:6100)
+                                                                                    at android.support.v7.widget.RecyclerView$Recycler.getViewForPosition(RecyclerView.java:5282)
+                                                                                    at android.support.v7.widget.RecyclerView$Recycler.getViewForPosition(RecyclerView.java:5158)
+                                                                                    at android.support.v7.widget.LinearLayoutManager$LayoutState.next(LinearLayoutManager.java:2061)
+                                                                                    at android.support.v7.widget.LinearLayoutManager.layoutChunk(LinearLayoutManager.java:1445)
+                                                                                    at android.support.v7.widget.LinearLayoutManager.fill(LinearLayoutManager.java:1408)
+                                                                                    at android.support.v7.widget.LinearLayoutManager.onLayoutChildren(LinearLayoutManager.java:580)
+                                                                                    at android.support.v7.widget.RecyclerView.dispatchLayoutStep2(RecyclerView.java:3379)
+                                                                                    at android.support.v7.widget.RecyclerView.dispatchLayout(RecyclerView.java:3188)
+                                                                                    at android.support.v7.widget.RecyclerView.onLayout(RecyclerView.java:3632)
+                                                                                    at android.view.View.layout(View.java:17523)
+                                                                                    at android.view.ViewGroup.layout(ViewGroup.java:5612)
+                                                                                    at android.widget.RelativeLayout.onLayout(RelativeLayout.java:1079)
+                                                                                    at android.view.View.layout(View.java:17523)
+                                                                                    at android.view.ViewGroup.layout(ViewGroup.java:5612)
+                                                                                    at android.widget.FrameLayout.layoutChildren(FrameLayout.java:323)
+                                                                                    at android.widget.FrameLayout.onLayout(FrameLayout.java:261)
+                                                                                    at android.view.View.layout(View.java:17523)
+                                                                                    at android.view.ViewGroup.layout(ViewGroup.java:5612)
+                                                                                    at android.widget.RelativeLayout.onLayout(RelativeLayout.java:1079)
+                                                                                    at android.view.View.layout(View.java:17523)
+                                                                                    at android.view.ViewGroup.layout(ViewGroup.java:5612)
+                                                                                    at android.support.design.widget.HeaderScrollingViewBehavior.layoutChild(HeaderScrollingViewBehavior.java:131)
+                                                                                    at android.support.design.widget.ViewOffsetBehavior.onLayoutChild(ViewOffsetBehavior.java:42)
+                                                                                    at android.support.design.widget.AppBarLayout$ScrollingViewBehavior.onLayoutChild(AppBarLayout.java:1367)
+                                                                                    at android.support.design.widget.CoordinatorLayout.onLayout(CoordinatorLayout.java:849)
+                                                                                    at android.view.View.layout(View.java:17523)
+                                                                                    at android.view.ViewGroup.layout(ViewGroup.java:5612)
+                                                                                    at android.support.v4.widget.DrawerLayout.onLayout(DrawerLayout.java:1193)
+                                                                                    at android.view.View.layout(View.java:17523)
+                                                                                    at android.view.ViewGroup.layout(ViewGroup.java:5612)
+                                                                                    at android.widget.FrameLayout.layoutChildren(FrameLayout.java:323)
+                                                                                    at android.widget.FrameLayout.onLayout(FrameLayout.java:261)
+                                                                                    at android.view.View.layout(View.java:17523)
+                                                                                    at android.view.ViewGroup.layout(ViewGroup.java:5612)
+                                                                                    at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1741)
+                                                                                    at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1585)
+                                                                                    at android.widget.LinearLayout.onLayout(LinearLayout.java:1494)
+                                                                                    at android.view.View.layout(View.java:17523)
+                                                                                    at android.view.ViewGroup.layout(ViewGroup.java:5612)
+                                                                                    at android.widget.FrameLayout.layoutChildren(FrameLayout.java:323)
+                                                                                    at android.widget.FrameLayout.onLayout(FrameLayout.java:261)
+                                                                                    at android.view.View.layout(View.java:17523)
+                                                                                    at android.view.ViewGroup.layout(ViewGroup.java:5612)
+                                                                                    at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1741)
+                                                                                    at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1585)
+                                                                                    at android.widget.LinearLayout.onLayout(LinearLayout.java:1494)
+                                                                                    at android.view.View.layout(View.java:17523)
+                                                                                    at android.view.ViewGroup.layout(ViewGroup.java:5612)
+                                                                                    at android.widget.FrameLayout.layoutChildren(FrameLayout.java:323)
+                                                                                    at android.widget.FrameLayout.onLayout(FrameLayout.java:261)
+                                                                                    at com.android.internal.policy.DecorView.onLayout(DecorView.java:724)
+03-09 10:46:12.076 2906-2906/com.example.user.shopkrinaseller E/AndroidRuntime:     at android.view.View.layout(View.java:17523)
+                                                                                    at android.view.ViewGroup.layout(ViewGroup.java:5612)
+                                                                                    at android.view.ViewRootImpl.performLayout(ViewRootImpl.java:2342)
+                                                                                    at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:2069)
+                                                                                    at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1246)
+                                                                                    at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:6301)
+                                                                                    at android.view.Choreographer$CallbackRecord.run(Choreographer.java:871)
+                                                                                    at android.view.Choreographer.doCallbacks(Choreographer.java:683)
+                                                                                    at android.view.Choreographer.doFrame(Choreographer.java:619)
+                                                                                    at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:857)
+                                                                                    at android.os.Handler.handleCallback(Handler.java:751)
+                                                                                    at android.os.Handler.dispatchMessage(Handler.java:95)
+                                                                                    at android.os.Looper.loop(Looper.java:154)
+                                                                                    at android.app.ActivityThread.main(ActivityThread.java:6077)
+                                                                                    at java.lang.reflect.Method.invoke(Native Method)
+                                                                                    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:865)
+                                                                                    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:755)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"CustomerId":792
+,"CustomerCategoryId":null
+,"Skcode":"SK4050"
+,"ShopName":"MADHU DRAIY FOOD"
+,"Warehouseid":1
+,"Mobile":"9826640606"
+,"WarehouseName":"W1"
+,"Name":"0"
+,"Password":"123456"
+,"Description":null
+,"CustomerType":null
+,"CustomerCategoryName":null
+,"CompanyId":2
+,"BillingAddress":"258,A SILICON CITY ONE STOP KIRANA KE PASS ME BIJALPUR INDORE"
+,"TypeOfBuissness":null
+,"ShippingAddress":"258,A SILICON CITY ONE STOP KIRANA KE PASS ME BIJALPUR INDORE"
+,"LandMark":"BIJALPUR"
+,"Country":null
+,"State":null
+,"Cityid":null
+,"City":"Indore"
+,"ZipCode":null
+,"BAGPSCoordinates":null
+,"SAGPSCoordinates":null
+,"RefNo":null
+,"OfficePhone":null
+,"Emailid":""
+,"Familymember":null
+,"CreatedBy":null
+,"LastModifiedBy":null
+,"CreatedDate":"2017-01-05T06:06:21.993-07:00"
+,"UpdatedDate":"2017-01-27T16:57:34.56-07:00"
+,"imei":null
+,"MonthlyTurnOver":0.0
+,"ExecutiveId":5
+,"SizeOfShop":null
+,"Rating":null
+,"ClusterId":1
+,"ClusterName":null
+,"Deleted":false
+,"Active":true
+,"lat":0.0
+,"lg":0.0
+,"Day":"Saturday"
+,"DivisionId":0
+,"BeatNumber":10
+,"Rewardspoints":"20"
+,"fcmId":null
+,"GroupNotification":null
+,"Notifications":null
+,"check":false
+,"Exception":null
+}
+
+
+
+
+
+                                                REPSONSE: {
+"CustomerId":1256
+,"CustomerCategoryId":null
+,"Skcode":"SK7662"
+,"ShopName":"Tejas Sir"
+,"Warehouseid":0
+,"Mobile":"9039006314"
+,"WarehouseName":"No Warehouse"
+,"Name":null
+,"Password":"123456"
+,"Description":null
+,"CustomerType":null
+,"CustomerCategoryName":null
+,"CompanyId":null
+,"BillingAddress":"Scheme 71, Indore, Madhya Pradesh, India"
+,"TypeOfBuissness":null
+,"ShippingAddress":null
+,"LandMark":null
+,"Country":null
+,"State":null
+,"Cityid":null
+,"City":null
+,"ZipCode":null
+,"BAGPSCoordinates":"Scheme 71, Indore, Madhya Pradesh, India"
+,"SAGPSCoordinates":null
+,"RefNo":null
+,"OfficePhone":null
+,"Emailid":null
+,"Familymember":null
+,"CreatedBy":null
+,"LastModifiedBy":null
+,"CreatedDate":"2017-02-22T21:19:25.833+05:30"
+,"UpdatedDate":"2017-02-28T09:36:24.22+05:30"
+,"imei":null
+,"MonthlyTurnOver":0.0
+,"ExecutiveId":null
+,"SizeOfShop":null
+,"Rating":null
+,"ClusterId":1
+,"ClusterName":"Cluster A"
+,"Deleted":false
+,"Active":true
+,"lat":0.0
+,"lg":0.0
+,"Day":""
+,"DivisionId":0
+,"BeatNumber":0
+,"Rewardspoints":null
+,"fcmId":null
+,"GroupNotification":null
+,"Notifications":null
+,"check":false,"Exception":null}
+
+
+
+
+E/orderData: {
+"CreatedDate":"2017-03-10 18:47:54"
+,"CustomerName":"name"
+,"CustomerType":"customerType"
+,"Customerphonenum":"mobile"
+,"SalesPersonId":"executiveId"
+,"ShippingAddress":"shippingAddress"
+,"ShopName":"shopName"
+,"Skcode":"skcode"
+,"TotalAmount":999
+,"deliveryCharge":"10"
+,"itemDetails":[
+{"ItemId":"1887","qty":10}]}
+
+
+
+
+
+E/SkJson: {
+"CustomerId":741
+,"CustomerCategoryId":null
+,"Skcode":"SK4741"
+,"ShopName":"Amit"
+,"Warehouseid":1
+,"Mobile":"9993827759"
+,"WarehouseName":"W1"
+,"Name":"testing"
+,"Password":"123456"
+,"Description":null
+,"CustomerType":null
+,"CustomerCategoryName":null
+,"CompanyId":2
+,"BillingAddress":"test"
+,"TypeOfBuissness":null
+,"ShippingAddress":"test"
+,"LandMark":"0"
+,"Country":null
+,"State":null
+,"Cityid":1
+,"City":"Indore"
+,"ZipCode":null
+,"BAGPSCoordinates":"Indore"
+,"SAGPSCoordinates":"Test"
+,"RefNo":null
+,"OfficePhone":null
+,"Emailid":""
+,"Familymember":null
+,"CreatedBy":null
+,"LastModifiedBy":null
+,"CreatedDate":"2016-12-28T22:37:12.587+05:30"
+,"UpdatedDate":"2017-03-09T16:40:31.743+05:30"
+,"imei":null
+,"MonthlyTurnOver":0
+,"ExecutiveId":2
+,"SizeOfShop":null
+,"Rating":null
+,"ClusterId":4
+,"ClusterName":"Cluster D"
+,"Deleted":false
+,"Active":true
+,"lat":0
+,"lg":0
+,"Day":"Friday"
+,"DivisionId":0
+,"BeatNumber":0
+,"Rewardspoints":"19"
+,"fcmId":"frPmVkrXH7M:APA91bGElw15mp2UxDdtYObfrS_oaagk8yjhWK7j0V35Vnfi9M3aiCD_KRRcKoxK0Su_czFCsZqxjCeocG7UGfZb-A8jjZmLAm-3DGw_mMpoF85nwN2GG2L7WKscdeH8926awNuz2Upy"
+,"GroupNotification":null
+,"Notifications":null
+,"check":false
+,"Exception":null}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                PARAMS: {
+"CreatedDate":"2017-03-10 19:24:03"
+,"CustomerName":"testing",
+"CustomerType":"null"
+,"SalesPersonId":"1"
+,"ShippingAddress":"shippingAddress"
+,"ShopName":"Amit"
+,"Skcode":"SK4741"
+,"TotalAmount":"cartItemBean.getTotalPrice()"
+,"deliveryCharge":"10"
+,"itemDetails":[{"ItemId":"1887","qty":13}]}
+
+
+
+
+
+E/ordererror: {
+"CreatedDate":"2017-03-10 19:34:10"
+,"CustomerName":"testing"
+,"CustomerType":"null"
+,"SalesPersonId":"1"
+,"ShippingAddress":"shippingAddress"
+,"ShopName":"Amit"
+,"Skcode":"SK4741"
+,"TotalAmount":999
+,"deliveryCharge":"10"
+,"itemDetails":[{"ItemId":"1887","qty":10}]}
+
+E/ordererror: {
+"CreatedDate":"2017-03-10 19:37:37"
+,"CustomerName":"testing"
+,"CustomerType":"null"
+,"Customerphonenum":"9876543210"
+,"SalesPersonId":"1"
+,"ShippingAddress":"shippingAddress"
+,"ShopName":"Amit"
+,"Skcode":"SK4741"
+,"TotalAmount":1198.8000000000002
+,"deliveryCharge":"10"
+,"itemDetails":[{"ItemId":"1887","qty":12}
+]
+}
+
+
+
+
+
+E/ordererror: {
+"CreatedDate":"2017-03-10 19:39:35"
+,"CustomerName":"testing"
+,"CustomerType":"null"
+,"Customerphonenum":"9876543210"
+,"SalesPersonId":"1"
+,"ShippingAddress":"shippingAddress"
+,"ShopName":"Amit"
+,"Skcode":"SK4741"
+,"TotalAmount":1098.9
+,"deliveryCharge":"10"
+,"itemDetails":[
+{"ItemId":"1887"
+,"qty":11}]
+}
+
+
+
+Screens
+Entering SKcode on checkout : Make it in a defined space and place it at top so that continue button looks clear
+
+//Final order page: Keep decimal to only 2 point
+//Error on final order page Please check
+//Email should not be compulsory field.
+ Customer address and shopname should be there on final order page
+
+
+UI: For UI refer latest Amit app. We will move to that. 
+
+Akhilesh: Need help on design part. We can change the images as discussed. We need to replace them with icons/cliparts for base category. For category i will try to provide the white background images 
+
+
+
+

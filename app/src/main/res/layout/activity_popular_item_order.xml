@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp">
+
+    <ImageView
+        android:id="@+id/item_row_item_logo_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_img_bg" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_row_item_logo_iv">
+
+
+
+
+        <TextView
+            android:id="@+id/item_list_row_total_cost_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:maxLines="1"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="0"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp" />
+
+
+
+        <TextView
+            android:id="@+id/itemlist_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/item_list_row_total_cost_tv"
+            android:maxLines="2"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Hasty Tasty super fine poha 500 gm"
+            android:textColor="@color/Black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:id="@+id/Spinner_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:layout_below="@+id/itemlist_item_name">
+
+            <Spinner
+                android:id="@+id/spinner_itemname"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/itemlist_item_name"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:layout_height="25dp"
+                />
+
+            <TextView
+                android:id="@+id/unit_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:maxLines="1"
+                android:text="| MRP: 44"
+                android:textColor="@color/Black"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_below="@id/Spinner_list"
+            android:id="@+id/itemlist_item_name_hindi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/item_list_row_total_cost_tv"
+            android:maxLines="2"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Hindi Name"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemlist_item_name_hindi">
+
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:id="@+id/item_row_minus_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:src="@drawable/minus_icon" />
+
+                <TextView
+                    android:id="@+id/item_row_quantity_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/item_row_plus_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:src="@drawable/plus_icon" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_row_ll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/ll1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/moq_mrp_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:maxLines="1"
+                    android:text="MOQ: 2 | MRP: 44"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/cost_margins_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="MOQ: 2 | Margins: 35%"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:id="@+id/dp_point"
+                    android:visibility="visible"
+                    android:text="DP "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/LightGrey" />
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/total_bg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/item_list_total_item_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/total"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/White"
+            android:textSize="16sp"
+
+            />
+
+        <TextView
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+
+            android:background="@drawable/total"
+
+            android:id="@+id/item_list_total_dp_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="DP: in UI"
+            android:textColor="@color/White"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:layout_centerInParent="true"
+            android:id="@+id/item_list_total_amount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/show_total"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+
+            android:visibility="gone"
+            android:id="@+id/item_list_bag_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/item_list_continue_btn"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/bag_icon" />
+
+
+
+
+
+        <ImageView
+            android:id="@+id/item_list_continue_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@drawable/continue_icon" />
+    </RelativeLayout>
+</RelativeLayout>
+

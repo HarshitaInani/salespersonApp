@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:text="Name"
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#000"
+
+            android:text="SK Code"
+
+            android:id="@+id/skCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#000"
+
+            android:text="Entry"
+
+            android:id="@+id/entry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textSize="13sp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:padding="5dp"
+            android:id="@+id/day"
+            android:layout_centerInParent="true"
+            android:text="Monday"
+            android:background="@drawable/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+       </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+    <ImageView
+        android:background="#444"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+</LinearLayout>

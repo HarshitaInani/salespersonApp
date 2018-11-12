@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_sales"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.mp_salesperson.MySalesActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_back"
+
+        />
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll1"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:background="#FF6347"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <TextView
+            android:id="@+id/days30"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Last 30 days"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+
+            android:id="@+id/month3"
+
+            android:textColor="#fff"
+
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Last 3 months"
+
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
